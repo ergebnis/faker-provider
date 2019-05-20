@@ -7,6 +7,10 @@ includes:
 	- vendor/phpstan/phpstan/conf/config.levelmax.neon
 
 parameters:
+	classesAllowedToBeExtended:
+		- Faker\Provider\Base
+	ignoreErrors:
+		- "#Method .* has parameter .* with null as default value.#"
 	paths:
 		- src
 		- test
