@@ -13,7 +13,7 @@ cs: vendor
 
 infection: vendor
 	mkdir -p .build/infection
-	vendor/bin/infection --ignore-msi-with-no-mutations --min-covered-msi=100 --min-msi=100
+	vendor/bin/infection --ignore-msi-with-no-mutations --min-covered-msi=73 --min-msi=73
 
 stan: vendor
 	mkdir -p .build/phpstan
@@ -21,7 +21,6 @@ stan: vendor
 
 test: vendor
 	mkdir -p .build/phpunit
-	vendor/bin/phpunit --configuration=test/AutoReview/phpunit.xml
 	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml
 
 vendor: composer.json composer.lock
