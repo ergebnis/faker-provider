@@ -145,10 +145,10 @@ final class AvatarUrlProviderTest extends Framework\TestCase
 
     private static function createFaker(): Generator
     {
-        $generator = Factory::create();
+        $faker = Factory::create();
 
-        $generator->seed(9001);
+        $faker->seed(9001);
 
-        return $generator;
+        return $faker;
     }
 }
