@@ -11,6 +11,9 @@ parameters:
 		- Faker\Provider\Base
 	ignoreErrors:
 		- '#Method .* has parameter .* with null as default value.#'
+		# https://github.com/phpstan/phpstan/issues/2141
+		- '#Method Localheinz\\Faker\\Provider\\Test\\Unit\\AvatarUrlProviderTest::createFakerWithAddedAvatarUrlProvider\(\) with return type void returns Faker\\Generator but should not return anything.#'
+		- '#PHPDoc tag @return contains unresolvable type.#'
 	paths:
 		- src
 		- test

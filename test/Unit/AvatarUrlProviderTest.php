@@ -34,16 +34,14 @@ final class AvatarUrlProviderTest extends Framework\TestCase
      */
     public function testAdorableAvatarUrlRejectsInvalidIdentifier(string $identifier): void
     {
-        $faker = self::createFaker();
+        $faker = self::createFakerWithAddedAvatarUrlProvider();
 
         $size = $faker->numberBetween(200, 450);
-
-        $provider = new AvatarUrlProvider($faker);
 
         self::expectException(\InvalidArgumentException::class);
         self::expectExceptionMessage('Identifier cannot contain new-line characters.');
 
-        $provider->adorableAvatarUrl(
+        $faker->adorableAvatarUrl(
             $identifier,
             $size
         );
@@ -51,7 +49,7 @@ final class AvatarUrlProviderTest extends Framework\TestCase
 
     public function providerInvalidAdorableAvatarUrlIdentifier(): \Generator
     {
-        $faker = self::createFaker();
+        $faker = self::createFakerWithAddedAvatarUrlProvider();
 
         $newLineCharacters = [
             "\n",
@@ -81,11 +79,9 @@ final class AvatarUrlProviderTest extends Framework\TestCase
      */
     public function testAdorableAvatarUrlRejectsInvalidSize(int $size): void
     {
-        $faker = self::createFaker();
+        $faker = self::createFakerWithAddedAvatarUrlProvider();
 
         $identifier = $faker->userName;
-
-        $provider = new AvatarUrlProvider($faker);
 
         self::expectException(\InvalidArgumentException::class);
         self::expectExceptionMessage(\sprintf(
@@ -93,7 +89,7 @@ final class AvatarUrlProviderTest extends Framework\TestCase
             $size
         ));
 
-        $provider->adorableAvatarUrl(
+        $faker->adorableAvatarUrl(
             $identifier,
             $size
         );
@@ -101,18 +97,16 @@ final class AvatarUrlProviderTest extends Framework\TestCase
 
     public function testAdorableAvatarUrlReturnsAdorableAvatarUrlWhenInvokedWithoutArguments(): void
     {
-        $faker = self::createFaker();
-
-        $provider = new AvatarUrlProvider($faker);
+        $faker = self::createFakerWithAddedAvatarUrlProvider();
 
         $pattern = self::PATTERN_ADORABLE_AVATAR_URL;
 
-        self::assertRegExp($pattern, $provider->adorableAvatarUrl());
+        self::assertRegExp($pattern, $faker->adorableAvatarUrl());
     }
 
     public function testAdorableAvatarUrlReturnsAdorableAvatarUrlWithTrimmedIdentifier(): void
     {
-        $faker = self::createFaker();
+        $faker = self::createFakerWithAddedAvatarUrlProvider();
 
         $identifier = $faker->userName;
         $paddedIdentifier = \str_pad(
@@ -123,15 +117,13 @@ final class AvatarUrlProviderTest extends Framework\TestCase
         );
         $size = $faker->numberBetween(200, 450);
 
-        $provider = new AvatarUrlProvider($faker);
-
         $expected = \sprintf(
             'https://api.adorable.io/avatars/%d/%s.png',
             $size,
             $identifier
         );
 
-        self::assertSame($expected, $provider->adorableAvatarUrl($paddedIdentifier, $size));
+        self::assertSame($expected, $faker->adorableAvatarUrl($paddedIdentifier, $size));
     }
 
     public function providerInvalidAdorableAvatarUrlSize(): array
@@ -148,6 +140,18 @@ final class AvatarUrlProviderTest extends Framework\TestCase
         $faker = Factory::create();
 
         $faker->seed(9001);
+
+        return $faker;
+    }
+
+    /**
+     * @return AvatarUrlProvider&Generator
+     */
+    private static function createFakerWithAddedAvatarUrlProvider(): Generator
+    {
+        $faker = self::createFaker();
+
+        $faker->addProvider(new AvatarUrlProvider($faker));
 
         return $faker;
     }
