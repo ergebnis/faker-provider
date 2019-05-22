@@ -56,7 +56,7 @@ $urlWithFixedIdentifierAndSize = $faker->adorableAvatarUrl(
 );
 ```
 
-![Example of ](https://api.adorable.io/avatars/150/localheinz.png)
+![Example of avatars.adorable.io avatar](https://api.adorable.io/avatars/150/localheinz.png)
 
 Also see [avatars.adorable.io](http://avatars.adorable.io/).
 
