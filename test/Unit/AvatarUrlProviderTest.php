@@ -34,6 +34,7 @@ final class AvatarUrlProviderTest extends Framework\TestCase
      */
     public function testAdorableAvatarUrlRejectsInvalidIdentifier(string $identifier): void
     {
+        /** @var AvatarUrlProvider&Generator $faker */
         $faker = self::createFakerWithAddedAvatarUrlProvider();
 
         $size = $faker->numberBetween(200, 450);
@@ -79,6 +80,7 @@ final class AvatarUrlProviderTest extends Framework\TestCase
      */
     public function testAdorableAvatarUrlRejectsInvalidSize(int $size): void
     {
+        /** @var AvatarUrlProvider&Generator $faker */
         $faker = self::createFakerWithAddedAvatarUrlProvider();
 
         $identifier = $faker->userName;
@@ -97,6 +99,7 @@ final class AvatarUrlProviderTest extends Framework\TestCase
 
     public function testAdorableAvatarUrlReturnsAdorableAvatarUrlWhenInvokedWithoutArguments(): void
     {
+        /** @var AvatarUrlProvider&Generator $faker */
         $faker = self::createFakerWithAddedAvatarUrlProvider();
 
         $pattern = self::PATTERN_ADORABLE_AVATAR_URL;
@@ -106,6 +109,7 @@ final class AvatarUrlProviderTest extends Framework\TestCase
 
     public function testAdorableAvatarUrlReturnsAdorableAvatarUrlWithTrimmedIdentifier(): void
     {
+        /** @var AvatarUrlProvider&Generator $faker */
         $faker = self::createFakerWithAddedAvatarUrlProvider();
 
         $identifier = $faker->userName;
@@ -144,9 +148,6 @@ final class AvatarUrlProviderTest extends Framework\TestCase
         return $faker;
     }
 
-    /**
-     * @return AvatarUrlProvider&Generator
-     */
     private static function createFakerWithAddedAvatarUrlProvider(): Generator
     {
         $faker = self::createFaker();
