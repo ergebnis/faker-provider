@@ -27,7 +27,7 @@ final class AvatarUrlProvider extends Provider\Base
      *
      * @return string
      */
-    public function adorableAvatarUrl(string $identifier = null, int $size = null): string
+    public function adorableAvatarUrl(?string $identifier = null, ?int $size = null): string
     {
         if (null !== $identifier && 1 === \preg_match('/(\n|\r)/', $identifier)) {
             throw new \InvalidArgumentException('Identifier cannot contain new-line characters.');
