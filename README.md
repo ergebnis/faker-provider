@@ -1,7 +1,7 @@
 # faker-provider
 
 [![Continuous Integration](https://github.com/localheinz/faker-provider/workflows/Continuous%20Integration/badge.svg)](https://github.com/localheinz/faker-provider/actions)
-[![codecov](https://codecov.io/gh/localheinz/faker-provider/branch/master/graph/badge.svg)](https://codecov.io/gh/localheinz/faker-provider)
+[![Code Coverage](https://codecov.io/gh/localheinz/faker-provider/branch/master/graph/badge.svg)](https://codecov.io/gh/localheinz/faker-provider)
 [![Latest Stable Version](https://poser.pugx.org/localheinz/faker-provider/v/stable)](https://packagist.org/packages/localheinz/faker-provider)
 [![Total Downloads](https://poser.pugx.org/localheinz/faker-provider/downloads)](https://packagist.org/packages/localheinz/faker-provider)
 

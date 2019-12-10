@@ -1,20 +1,12 @@
 includes:
-	- vendor/ergebnis/phpstan-rules/rules.neon
-	- vendor/phpstan/phpstan-deprecation-rules/rules.neon
-	- vendor/phpstan/phpstan-strict-rules/rules.neon
-	- vendor/phpstan/phpstan/conf/bleedingEdge.neon
-	- vendor/phpstan/phpstan/conf/config.levelmax.neon
+	- phpstan-baseline.neon
 
 parameters:
 	ergebnis:
 		classesAllowedToBeExtended:
 			- Faker\Provider\Base
-	ignoreErrors:
-		- '#Method Localheinz\\Faker\\Provider\\AvatarUrlProvider::adorableAvatarUrl\(\) has parameter \$identifier with a nullable type declaration\.#'
-		- '#Method Localheinz\\Faker\\Provider\\AvatarUrlProvider::adorableAvatarUrl\(\) has parameter \$identifier with null as default value\.#'
-		- '#Method Localheinz\\Faker\\Provider\\AvatarUrlProvider::adorableAvatarUrl\(\) has parameter \$size with a nullable type declaration\.#'
-		- '#Method Localheinz\\Faker\\Provider\\AvatarUrlProvider::adorableAvatarUrl\(\) has parameter \$size with null as default value\.#'
 	inferPrivatePropertyTypeFromConstructor: true
+	level: max
 	paths:
 		- src
 		- test
