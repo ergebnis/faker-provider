@@ -1,9 +1,9 @@
 # faker-provider
 
-[![Continuous Integration](https://github.com/localheinz/faker-provider/workflows/Continuous%20Integration/badge.svg)](https://github.com/localheinz/faker-provider/actions)
-[![Code Coverage](https://codecov.io/gh/localheinz/faker-provider/branch/master/graph/badge.svg)](https://codecov.io/gh/localheinz/faker-provider)
-[![Latest Stable Version](https://poser.pugx.org/localheinz/faker-provider/v/stable)](https://packagist.org/packages/localheinz/faker-provider)
-[![Total Downloads](https://poser.pugx.org/localheinz/faker-provider/downloads)](https://packagist.org/packages/localheinz/faker-provider)
+[![Continuous Integration](https://github.com/ergebnis/faker-provider/workflows/Continuous%20Integration/badge.svg)](https://github.com/ergebnis/faker-provider/actions)
+[![Code Coverage](https://codecov.io/gh/ergebnis/faker-provider/branch/master/graph/badge.svg)](https://codecov.io/gh/ergebnis/faker-provider)
+[![Latest Stable Version](https://poser.pugx.org/ergebnis/faker-provider/v/stable)](https://packagist.org/packages/ergebnis/faker-provider)
+[![Total Downloads](https://poser.pugx.org/ergebnis/faker-provider/downloads)](https://packagist.org/packages/ergebnis/faker-provider)
 
 Provides additional providers for [`fzaninotto/faker`](https://github.com/fzaninotto/Faker).
 
@@ -12,7 +12,7 @@ Provides additional providers for [`fzaninotto/faker`](https://github.com/fzanin
 Run
 
 ```
-$ composer require --dev localheinz/faker-provider
+$ composer require --dev ergebnis/faker-provider
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ $faker = Factory::create();
 Then add providers like this:
 
 ```php
-use Localheinz\Faker\Provider;
+use Ergebnis\Faker\Provider;
 
 $faker->addProvider(new Provider\AvatarUrlProvider($faker));
 ```
@@ -37,13 +37,13 @@ $faker->addProvider(new Provider\AvatarUrlProvider($faker));
 
 This package provides the following providers for use with [`fzaninotto/faker`](https://github.com/fzaninotto/Faker):
 
-* [`Localheinz\Faker\Provider\AvatarUrlProvider`](https://github.com/localheinz/faker-provider#avatarurlprovider)
+* [`Ergebnis\Faker\Provider\AvatarUrlProvider`](https://github.com/ergebnis/faker-provider#avatarurlprovider)
 
 ### `AvatarUrlProvider`
 
 ```php
+use Ergebnis\Faker\Provider;
 use Faker\Generator;
-use Localheinz\Faker\Provider;
 
 /** @var Generator&Provider\AvatarUrlProvider $faker */
 $url = $faker->adorableAvatarUrl();

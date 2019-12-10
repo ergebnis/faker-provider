@@ -8,20 +8,20 @@ declare(strict_types=1);
  * For the full copyright and license information, please view
  * the LICENSE file that was distributed with this source code.
  *
- * @see https://github.com/localheinz/faker-provider
+ * @see https://github.com/ergebnis/faker-provider
  */
 
-namespace Localheinz\Faker\Provider\Test\Unit;
+namespace Ergebnis\Faker\Provider\Test\Unit;
 
+use Ergebnis\Faker\Provider\AvatarUrlProvider;
 use Faker\Factory;
 use Faker\Generator;
-use Localheinz\Faker\Provider\AvatarUrlProvider;
 use PHPUnit\Framework;
 
 /**
  * @internal
  *
- * @covers \Localheinz\Faker\Provider\AvatarUrlProvider
+ * @covers \Ergebnis\Faker\Provider\AvatarUrlProvider
  */
 final class AvatarUrlProviderTest extends Framework\TestCase
 {

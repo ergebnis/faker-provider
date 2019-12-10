@@ -3,22 +3,22 @@
 parameters:
 	ignoreErrors:
 		-
-			message: "#^Method Localheinz\\\\Faker\\\\Provider\\\\AvatarUrlProvider\\:\\:adorableAvatarUrl\\(\\) has parameter \\$identifier with a nullable type declaration\\.$#"
+			message: "#^Method Ergebnis\\\\Faker\\\\Provider\\\\AvatarUrlProvider\\:\\:adorableAvatarUrl\\(\\) has parameter \\$identifier with a nullable type declaration\\.$#"
 			count: 1
 			path: src/AvatarUrlProvider.php
 
 		-
-			message: "#^Method Localheinz\\\\Faker\\\\Provider\\\\AvatarUrlProvider\\:\\:adorableAvatarUrl\\(\\) has parameter \\$identifier with null as default value\\.$#"
+			message: "#^Method Ergebnis\\\\Faker\\\\Provider\\\\AvatarUrlProvider\\:\\:adorableAvatarUrl\\(\\) has parameter \\$identifier with null as default value\\.$#"
 			count: 1
 			path: src/AvatarUrlProvider.php
 
 		-
-			message: "#^Method Localheinz\\\\Faker\\\\Provider\\\\AvatarUrlProvider\\:\\:adorableAvatarUrl\\(\\) has parameter \\$size with a nullable type declaration\\.$#"
+			message: "#^Method Ergebnis\\\\Faker\\\\Provider\\\\AvatarUrlProvider\\:\\:adorableAvatarUrl\\(\\) has parameter \\$size with a nullable type declaration\\.$#"
 			count: 1
 			path: src/AvatarUrlProvider.php
 
 		-
-			message: "#^Method Localheinz\\\\Faker\\\\Provider\\\\AvatarUrlProvider\\:\\:adorableAvatarUrl\\(\\) has parameter \\$size with null as default value\\.$#"
+			message: "#^Method Ergebnis\\\\Faker\\\\Provider\\\\AvatarUrlProvider\\:\\:adorableAvatarUrl\\(\\) has parameter \\$size with null as default value\\.$#"
 			count: 1
 			path: src/AvatarUrlProvider.php
 
