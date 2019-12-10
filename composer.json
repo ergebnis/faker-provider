@@ -1,5 +1,5 @@
 {
-  "name": "localheinz/faker-provider",
+  "name": "ergebnis/faker-provider",
   "type": "library",
   "description": "Provides additional providers for fzaninotto/faker.",
   "keywords": [
@@ -7,7 +7,7 @@
     "faker",
     "provider"
   ],
-  "homepage": "https://github.com/localheinz/faker-provider",
+  "homepage": "https://github.com/ergebnis/faker-provider",
   "license": "MIT",
   "authors": [
     {
@@ -18,6 +18,9 @@
   "require": {
     "php": "^7.2",
     "fzaninotto/faker": "^1.9.0"
+  },
+  "replace": {
+    "localheinz/faker-provider": "*"
   },
   "require-dev": {
     "ergebnis/php-cs-fixer-config": "~1.0.0",
@@ -37,16 +40,16 @@
   },
   "autoload": {
     "psr-4": {
-      "Localheinz\\Faker\\Provider\\": "src/"
+      "Ergebnis\\Faker\\Provider\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Localheinz\\Faker\\Provider\\Test\\": "test/"
+      "Ergebnis\\Faker\\Provider\\Test\\": "test/"
     }
   },
   "support": {
-    "issues": "https://github.com/localheinz/faker-provider/issues",
-    "source": "https://github.com/localheinz/faker-provider"
+    "issues": "https://github.com/ergebnis/faker-provider/issues",
+    "source": "https://github.com/ergebnis/faker-provider"
   }
 }

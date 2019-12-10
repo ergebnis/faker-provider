@@ -6,7 +6,45 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`0.1.0...master`][0.1.0...master].
+For a full diff see [`0.2.0...master`][0.2.0...master].
+
+## [`0.2.0`][0.2.0]
+
+For a full diff see [`0.1.0...0.2.0`][0.1.0...0.2.0].
+
+### Changed
+
+* Renamed vendor namespace `Localheinz` to `Ergebnis` after move to [@ergebnis] ([#18]), by [@localheinz]
+
+  Run
+
+  ```
+  $ composer remove localheinz/faker-provider
+  ```
+
+  and
+
+  ```
+  $ composer require ergebnis/faker-provider
+  ```
+
+  to update.
+
+  Run
+
+  ```
+  $ find . -type f -exec sed -i '.bak' 's/Localheinz\\Faker\\Provider/Ergebnis\\Faker\\Provider/g' {} \;
+  ```
+
+  to replace occurrences of `Localheinz\Faker\Provider` with `Ergebnis\Faker\Provider`.
+
+  Run
+
+  ```
+  $ find -type f -name '*.bak' -delete
+  ```
+
+  to delete backup files created in the previous step.
 
 ### Fixed
 
@@ -20,12 +58,16 @@ For a full diff see [`b2e46fd...0.1.0`][b2e46fd...0.1.0].
 
 * Added `AvatarUrlProvider` which initally allows creating URLs to [avatars.adorable.io](http://avatars.adorable.io) avatars ([#1]), by [@localheinz]
 
-[0.1.0]: https://github.com/localheinz/faker-provider/tag/0.1.0
+[0.1.0]: https://github.com/ergebnis/faker-provider/tag/0.1.0
+[0.2.0]: https://github.com/ergebnis/faker-provider/tag/0.2.0
 
-[b2e46fd...0.1.0]: https://github.com/localheinz/faker-provider/compare/b2e46fd...0.1.0
-[0.1.0...master]: https://github.com/localheinz/faker-provider/compare/0.1.0...master
+[b2e46fd...0.1.0]: https://github.com/ergebnis/faker-provider/compare/b2e46fd...0.1.0
+[0.1.0...0.2.0]: https://github.com/ergebnis/faker-provider/compare/0.1.0...0.2.0
+[0.2.0...master]: https://github.com/ergebnis/faker-provider/compare/0.2.0...master
 
-[#1]: https://github.com/localheinz/faker-provider/pull/1
-[#4]: https://github.com/localheinz/faker-provider/pull/4
+[#1]: https://github.com/ergebnis/faker-provider/pull/1
+[#4]: https://github.com/ergebnis/faker-provider/pull/4
+[#18]: https://github.com/ergebnis/faker-provider/pull/18
 
+[@ergebnis]: https://github.com/ergebnis
 [@localheinz]: https://github.com/localheinz

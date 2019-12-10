@@ -8,10 +8,10 @@ declare(strict_types=1);
  * For the full copyright and license information, please view
  * the LICENSE file that was distributed with this source code.
  *
- * @see https://github.com/localheinz/faker-provider
+ * @see https://github.com/ergebnis/faker-provider
  */
 
-namespace Localheinz\Faker\Provider;
+namespace Ergebnis\Faker\Provider;
 
 use Faker\Provider;
 
