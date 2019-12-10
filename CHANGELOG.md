@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`0.1.0...master`][0.1.0...master].
 
+### Fixed
+
+* Required `fzaninotto/faker` ([#4]), by [@localheinz]
+
 ## [`0.1.0`][0.1.0]
 
 For a full diff see [`b2e46fd...0.1.0`][b2e46fd...0.1.0].
@@ -22,5 +26,6 @@ For a full diff see [`b2e46fd...0.1.0`][b2e46fd...0.1.0].
 [0.1.0...master]: https://github.com/localheinz/faker-provider/compare/0.1.0...master
 
 [#1]: https://github.com/localheinz/faker-provider/pull/1
+[#4]: https://github.com/localheinz/faker-provider/pull/4
 
 [@localheinz]: https://github.com/localheinz
