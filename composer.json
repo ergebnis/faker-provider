@@ -19,9 +19,6 @@
     "php": "^7.2",
     "fzaninotto/faker": "^1.9.0"
   },
-  "replace": {
-    "localheinz/faker-provider": "*"
-  },
   "require-dev": {
     "ergebnis/php-cs-fixer-config": "~1.0.0",
     "ergebnis/phpstan-rules": "~0.14.0",
