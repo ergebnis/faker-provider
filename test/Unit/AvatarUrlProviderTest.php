@@ -50,6 +50,7 @@ final class AvatarUrlProviderTest extends Framework\TestCase
 
     public function providerInvalidAdorableAvatarUrlIdentifier(): \Generator
     {
+        /** @var AvatarUrlProvider&Generator $faker */
         $faker = self::createFakerWithAddedAvatarUrlProvider();
 
         $newLineCharacters = [

@@ -1,5 +1,3 @@
-
-
 parameters:
 	ignoreErrors:
 		-
@@ -22,4 +20,8 @@ parameters:
 			count: 1
 			path: src/AvatarUrlProvider.php
 
+		-
+			message: "#^PHPDoc tag @var for variable \\$faker contains unresolvable type\\.$#"
+			count: 5
+			path: test/Unit/AvatarUrlProviderTest.php
 
