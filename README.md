@@ -1,7 +1,9 @@
 # faker-provider
 
+[![Continuous Deployment](https://github.com/ergebnis/faker-provider/workflows/Continuous%20Deployment/badge.svg)](https://github.com/ergebnis/faker-provider/actions)
 [![Continuous Integration](https://github.com/ergebnis/faker-provider/workflows/Continuous%20Integration/badge.svg)](https://github.com/ergebnis/faker-provider/actions)
 [![Code Coverage](https://codecov.io/gh/ergebnis/faker-provider/branch/master/graph/badge.svg)](https://codecov.io/gh/ergebnis/faker-provider)
+[![Type Coverage](https://shepherd.dev/github/ergebnis/faker-provider/coverage.svg)](https://shepherd.dev/github/ergebnis/faker-provider)
 [![Latest Stable Version](https://poser.pugx.org/ergebnis/faker-provider/v/stable)](https://packagist.org/packages/ergebnis/faker-provider)
 [![Total Downloads](https://poser.pugx.org/ergebnis/faker-provider/downloads)](https://packagist.org/packages/ergebnis/faker-provider)
 
