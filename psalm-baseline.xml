@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="3.8.1@8e54e3aa060fc490d86d0e2abbf62750516d40fd">
+<files psalm-version="3.10.1@eeed5ecccc10131397f0eb7ee6da810c0be3a7fc">
   <file src="src/AvatarUrlProvider.php">
     <PropertyNotSetInConstructor occurrences="1">
       <code>AvatarUrlProvider</code>
     </PropertyNotSetInConstructor>
   </file>
   <file src="test/Unit/AvatarUrlProviderTest.php">
+    <MixedArgument occurrences="4">
+      <code>$identifier</code>
+      <code>$identifier</code>
+      <code>$identifier</code>
+      <code>$identifier</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="2">
+      <code>$identifier</code>
+      <code>$identifier</code>
+    </MixedAssignment>
+    <MixedInferredReturnType occurrences="2">
+      <code>\Generator</code>
+      <code>array</code>
+    </MixedInferredReturnType>
     <UndefinedPropertyFetch occurrences="3">
       <code>$faker-&gt;words</code>
       <code>$faker-&gt;userName</code>

@@ -1,7 +1,9 @@
 # faker-provider
 
-[![Continuous Deployment](https://github.com/ergebnis/faker-provider/workflows/Continuous%20Deployment/badge.svg)](https://github.com/ergebnis/faker-provider/actions)
-[![Continuous Integration](https://github.com/ergebnis/faker-provider/workflows/Continuous%20Integration/badge.svg)](https://github.com/ergebnis/faker-provider/actions)
+[![Integrate](https://github.com/ergebnis/faker-provider/workflows/Integrate/badge.svg?branch=master)](https://github.com/ergebnis/faker-provider/actions)
+[![Prune](https://github.com/ergebnis/faker-provider/workflows/Prune/badge.svg?branch=master)](https://github.com/ergebnis/faker-provider/actions)
+[![Release](https://github.com/ergebnis/faker-provider/workflows/Release/badge.svg?branch=master)](https://github.com/ergebnis/faker-provider/actions)
+[![Renew](https://github.com/ergebnis/faker-provider/workflows/Renew/badge.svg?branch=master)](https://github.com/ergebnis/faker-provider/actions)
 
 [![Code Coverage](https://codecov.io/gh/ergebnis/faker-provider/branch/master/graph/badge.svg)](https://codecov.io/gh/ergebnis/faker-provider)
 [![Type Coverage](https://shepherd.dev/github/ergebnis/faker-provider/coverage.svg)](https://shepherd.dev/github/ergebnis/faker-provider)
@@ -78,4 +80,7 @@ Please have a look at [`CODE_OF_CONDUCT.md`](https://github.com/ergebnis/.github
 
 ## License
 
-This package is licensed using the [MIT License](LICENSE.md).
+This package is licensed using the MIT License.
+
+Please have a look at [`LICENSE.md`](LICENSE.md).
+
