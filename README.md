@@ -34,8 +34,12 @@ $faker = Factory::create();
 Then add providers like this:
 
 ```php
-use Ergebnis\Faker\Provider;
+<?php
 
+use Ergebnis\Faker\Provider;
+use Faker\Generator;
+
+/** @var Generator $faker */
 $faker->addProvider(new Provider\AvatarUrlProvider($faker));
 ```
 
@@ -48,6 +52,8 @@ This package provides the following providers for use with [`fzaninotto/faker`](
 ### `AvatarUrlProvider`
 
 ```php
+<?php
+
 use Ergebnis\Faker\Provider;
 use Faker\Generator;
 
@@ -84,3 +90,6 @@ This package is licensed using the MIT License.
 
 Please have a look at [`LICENSE.md`](LICENSE.md).
 
+## Curious what I am building?
+
+:mailbox_with_mail: [Subscribe to my list](https://localheinz.com/projects/), and I will occasionally send you an email to let you know what I am working on.
