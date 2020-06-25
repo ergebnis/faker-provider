@@ -17,7 +17,7 @@ Provides additional providers for [`fzaninotto/faker`](https://github.com/fzanin
 
 Run
 
-```
+```sh
 $ composer require --dev ergebnis/faker-provider
 ```
 
